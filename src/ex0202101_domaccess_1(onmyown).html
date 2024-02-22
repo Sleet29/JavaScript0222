@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DOM Access</title>
+	<script>
+		window.onclick = function() {
+			// getElementById()메소드를 이용해서 원하는 요소 객체에 접근할 수 있다.
+			var box = document.getElementById('username');
+			
+			// input 요소의 value 속성값을 대화 상자에 보여줍니다.
+			var userInput =	prompt(header.value);
+			
+			box.value = userInput;
+			
+			box.style.color = "red";
+			box.style.backgroundColor = "yellow";
+			
+		};
+	</script>
+</head>
+<body>
+	이름 : <input id= "username" type = "text" value="사용자의 이름은?">
+</body>
+</html>

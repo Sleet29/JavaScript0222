@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Event Handling</title>
+<script>
+	function add() {
+		var a = document.getElementById("op1");
+		var b = document.getElementById("op2");
+		
+		//document.getElementById("result").value = a.value+b.value; // 문자열 연결
+		document.getElementById("result").value = Number(a.value)+Number(b.value); // 문자열 연결
+		document.getElementById("result").value = parseInt(a.value)+parseInt(b.value); // 문자열 연결
+		
+	}
+</script>
+</head>
+<body>
+	<input id="op1" type="text" size="2"> + <!-- 첫 번째 숫자 입력란 -->
+	<input id="op2" type="text" size="2"> <!-- 두 번째 숫자 입력란 -->
+	<input type="button" value="=" onclick="add()"> <!-- 덧셈 버튼 -->
+	<input id="result" type="text" size="2"> <!-- 결과 텍스트 상자 -->
+</body>
+</html>
